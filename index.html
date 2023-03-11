@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--FAVICON DE LA PAGINA // ?2 forza a cargar el icono en elnombre de pagina-->
+    <link rel="shortcut icon" href="favicon/favi.ico?2" type="image/x-icon">
+    <link rel="icon" href="favicon/favi.ico?2" type="emage/x.icon">
+    <!--Estilos de CSS-->
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <!--BOXICONS-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!--INICIO TOOGLE-->
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show');
+            });
+        });
+    </script>
+    <!--END TOGGLE-->
+
+    <!--Swett aler-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!--Swet alert-->
+</head>
+
+<body>
+    <!-- inicio header-->
+    <div class="hero">
+        <nav>
+            <h2 class="logo">Port<span>folio</span></h2>
+            <ul class="enlaces-header">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <a href="#" class="btn" onclick="saludo()">SALUDO</a>
+            
+            <label id="icon">
+                <i class='bx bx-menu'></i>
+            </label>
+        </nav>
+
+        <div class="content">
+            <h4>Hola, mi nombre es</h4>
+            <h1><span>Alexander</span> Romero</h1>
+            <h3>Soy estudiante de Ing. Sistemas e Informática</h3>
+            <div class="newslatter">
+                <form action="">
+                    <input type="email" name="email" id="mail" placeholder="Enter yout email">
+                    <input type="submit" name="submit" class="btn" id="correo" value="Comenzar" onclick="mensajeCorreo()">
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <!-- end header-->
+
+    <!--About seccion start -->
+    <section class="about" id="about">
+        <div class="main">
+            <div class="banner_img">
+                <img src="./imagenes/img_2.jpeg" alt="">
+            </div>
+            <div class="about-text">
+                <h2>Acerca de mí</h2>
+                <h5>Developer <span>& Designer</span></h5>
+                <p> Soy un desarrollador frontend. Puedo proporcionar código limpio, 
+                    ordenado y diseño perfecto de píxeles. También hago que el sitio 
+                    web sea más interactivo con animaciones web.
+                    <button onclick="aboutMore()">Let's talk</button>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- end about-->
+
+    <!-- inicio SERVICES-->
+    <div class="service" id="skills">
+        <div class="title">
+            <h2>Conocimientos / Habilidades</h2>
+        </div>
+        <div class="box">
+            <div class="card">
+                <i class='bx bx-globe' ></i>
+                <h5>DESARROLLO WEB</h5>
+                <ul class="skills">
+                    <h4><li class='bx bx-check-circle'></li>HTML5</h4>
+                    <h4><li class='bx bx-check-circle'></li>CSS3</h4>
+                    <h4><li class='bx bx-check-circle'></li>JavaScript</h4>
+                    <h4><li class='bx bx-check-circle'></li>GIT</h4>
+                    <h4><li class='bx bx-check-circle'></li>GITHUB</h4>
+                    <h4><li class='bx bx-check-circle'></li>PHP</h4>
+                </ul> 
+            </div>
+            <div class="card">
+                <i class='bx bx-code-alt' ></i>
+                <h5>LENGUAJES DE PROGRAMACIÓN</h5>
+                <ul class="skills">
+                    <h4><li class='bx bx-check-circle'></li>JAVA (NetBeans)</h4>
+                    <h4><li class='bx bx-check-circle'></li>CSharp (C#)</h4>
+                    <h4><li class='bx bx-check-circle'></li>Python</h4>
+                    <h4><li class='bx bx-check-circle'></li>C++</h4>
+                </ul> 
+            </div>
+            <div class="card">
+                <i class='bx bx-server' ></i>
+                <h5>SERVIDORES DE APLICACIONES</h5>
+                <ul class="skills">
+                    <h4><li class='bx bx-check-circle'></li>Tomcat 8.5</h4>
+                    <h4><li class='bx bx-check-circle'></li>XAMPP</h4>
+                    <h4><li class='bx bx-check-circle'></li>Glasfish</h4>
+                    <h4><li class='bx bx-check-circle'></li>Hosting (CPanel)</h4>
+                </ul>
+            </div>
+            <div class="card">
+                <i class='bx bx-data' ></i>
+                <h5>BASE DE DATOS</h5>
+                <ul class="skills">
+                    <h4><li class='bx bx-check-circle'></li>MySQL</h4>
+                    <h4><li class='bx bx-check-circle'></li>SQLServer</h4>
+                    <h4><li class='bx bx-check-circle'></li>MariaBD</h4>
+                    <h4><li class='bx bx-check-circle'></li>PostreSQL</h4>
+                </ul> 
+            </div>
+            <div class="card">
+                <i class='bx bx-extension' ></i>
+                <h5>TÉCNICO</h5>
+                <div class="pra">
+                    <p>Conocimiento sobre Microsoft Office nivel intermedio, instalación
+                        y configuración de programas, formateo de equipos.
+                    </p>
+                    <p style="text-align: center;">
+                        <a class="button" href="#" onclick="leerMas()">Read More</a>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <i class='bx bx-planet' ></i>
+                <h5>IDIOMAS</h5> 
+                <ul class="skills">
+                    <h4><li class='bx bx-check-circle'></li>Inglés (Básico)</h4>
+                    <h4><li class='bx bx-check-circle'></li>Portugués (Basíco)</h4>
+                </ul>           
+            </div>
+        </div>
+    </div>
+    <!-- end service -->
+
+
+    <!-- inicio footer-->
+    <footer>
+        <p class="logos">Alexander Romero</p>
+        <p>Diseño de portafolio con uso de HTML, CSS y JS.
+        </p>
+        <div class="social" id="contact">
+            <a href="#" alt=""><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#" alt=""><i class='bx bxl-linkedin'></i></a>
+            <a href="#" alt=""><i class='bx bxl-dribbble' ></i></a>
+        </div>
+        <p class="end">Copyright by Alexander Romero</p>
+    </footer>
+    <!-- end footer -->
+
+    <!--start JS -->
+    <script src="./js/script.js"></script>
+    <!--END JS-->
+</body>
+
+</html>
