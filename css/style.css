@@ -182,6 +182,7 @@ h4{
 }
 .about-text h2{
     color:white;
+    margin-top: 30px;
     font-size: 75px;
     text-transform: capitalize;
     margin-bottom: 20px;
@@ -303,7 +304,7 @@ h5{
 footer{
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 250px;
     background: #101010;
     display: flex;
     flex-direction: column;
@@ -348,14 +349,15 @@ footer p:nth-child(2){
     position: absolute;
     color: #f9004d;
     text-align: center;
-    bottom: 40px;
+    bottom: 30px;
     font-size: 14px;
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width:900PX){
     .hero{
         height: 100vh;
+        width: 107%;
     }
     h2{
         font-size: 45px;
@@ -397,6 +399,92 @@ footer p:nth-child(2){
     h1{
         color: white;
         margin: 20px 0px 20px;
+        font-size: 35px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    h4{
+        font-size: 15px;
+    }
+    .newslatter form{
+        width: 300px;
+    }
+    
+    /*SECOND CONTENT*/
+    .about{
+        width: 107%;
+    }
+    .main{
+        width: 1130px;
+        max-width: 100%;
+    }
+
+    .about img{
+        height: auto;
+        width: 300px;
+    }
+    .about-text{
+        width: 400px;
+    }
+    .about-text h2{
+        margin-top: 30px;
+        font-size: 40px;
+    }
+    .about-text h5{
+        font-size: 28px;
+    }
+    .about-text p{
+        font-size: 16px;
+    }
+    /*3ER CONTENT*/
+    .service{
+        width: 107%;
+    }
+    .title h2{
+        font-size: 40px;
+        width: 100%;
+    }
+    .card i{
+        font-size: 47px;
+    }
+    h5{
+        font-size: 22px;
+    }
+    .pra p{
+        font-size: 18px;
+    }
+    /*4TO CONTENT*/
+    footer{
+        height: 250px;
+        display: flex;
+        width: 107%;
+    }
+    footer p:nth-child(1){
+        font-size: 25px;
+    }
+    footer p:nth-child(2){
+        font-size: 15px;
+    }    
+}
+@media screen and (max-width: 800px) {
+    .hero{
+        height: 100vh;
+    }
+    h2{
+        font-size: 45px;
+    }
+    nav .btn{
+        display: none;
+    }
+    /*FIRST CONTENT*/
+    .content{
+        top: 60%;
+        left: 5%;
+    }
+    h1{
+        color: white;
+        margin: 20px 0px 20px;
         font-size: 40px;
     }
     h3{
@@ -423,6 +511,7 @@ footer p:nth-child(2){
         align-items: center;
     }
     .about-text h2{
+        margin-top: 30px;
         font-size: 50px;
     }
     .about-text h5{
@@ -467,7 +556,7 @@ footer p:nth-child(2){
     }
     /*4TO CONTENT*/
     footer{
-        height: 240px;
+        height: 250px;
         display: flex;
     }
     footer p:nth-child(1){
@@ -525,6 +614,7 @@ footer p:nth-child(2){
         width: 450px;
     }
     .about-text h2{
+        margin-top: 30px;
         font-size: 45px;
     }
     .about-text h5{
@@ -552,7 +642,7 @@ footer p:nth-child(2){
     }
     /*4TO CONTENT*/
     footer{
-        height: 300px;
+        height: 250px;
         display: flex;
     }
     footer p:nth-child(1){
@@ -560,5 +650,96 @@ footer p:nth-child(2){
     }
     footer p:nth-child(2){
         font-size: 18px;
+    }    
+}
+
+@media screen and (max-width:400PX){
+    .hero{
+        height: 100vh;
+        width: 107%;
+        background-size: cover;
+        background-position: center;
+        margin-right: 0;
+    }
+    h2{
+        font-size: 45px;
+    }
+    nav .btn{
+        display: none;
+    }
+    /*FIRST CONTENT*/
+    .content{
+        top: 60%;
+        left: 5%;
+    }
+    h1{
+        color: white;
+        margin: 20px 0px 20px;
+        font-size: 35px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    h4{
+        font-size: 15px;
+    }
+    .newslatter form{
+        width: 300px;
+    }
+    
+    /*SECOND CONTENT*/
+    .about{
+        width: 107%;
+    }
+    .main{
+        width: 1130px;
+        max-width: 100%;
+    }
+
+    .about img{
+        height: auto;
+        width: 300px;
+    }
+    .about-text{
+        width: 400px;
+    }
+    .about-text h2{
+        margin-top: 30px;
+        font-size: 40px;
+    }
+    .about-text h5{
+        font-size: 28px;
+    }
+    .about-text p{
+        font-size: 16px;
+    }
+    /*3ER CONTENT*/
+    .service{
+        width: 107%;
+    }
+    .title h2{
+        font-size: 40px;
+        width: 100%;
+    }
+    .card i{
+        font-size: 47px;
+    }
+    h5{
+        font-size: 22px;
+    }
+    .pra p{
+        font-size: 18px;
+    }
+    /*4TO CONTENT*/
+    footer{
+        height: 250px;
+        display: flex;
+        width: 107%;
+    }
+    footer p:nth-child(1){
+        font-size: 25px;
+    }
+    footer p:nth-child(2){
+        font-size: 15px;
     }    
 }
