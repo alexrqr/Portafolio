@@ -371,7 +371,7 @@ footer p:nth-child(2){
     }
     nav ul{
         position: fixed;
-        width: 100%;
+        width: 80%;
         height: 100vh;
         background: #2f3640;
         top: 80px;
@@ -470,6 +470,7 @@ footer p:nth-child(2){
 @media screen and (max-width: 800px) {
     .hero{
         height: 100vh;
+        width: 107%;
     }
     h2{
         font-size: 45px;
@@ -498,6 +499,9 @@ footer p:nth-child(2){
     }
     
     /*SECOND CONTENT*/
+    .about{
+        width: 107%;
+    }
     .about img{
         height: auto;
         width: 400px;
@@ -523,7 +527,7 @@ footer p:nth-child(2){
     /*3ER CONTENT*/
     .service{
         background: #101010;
-        width: 100%;
+        width: 107%;
     }
     .title h2{
         font-size: 50px;
@@ -558,6 +562,7 @@ footer p:nth-child(2){
     footer{
         height: 250px;
         display: flex;
+        width: 107%;
     }
     footer p:nth-child(1){
         font-size: 35px;
@@ -574,7 +579,7 @@ footer p:nth-child(2){
 @media screen and (max-width: 600px) {
     .hero{
         height: 100vh;
-        width: 100%;
+        width: 107%;
         background-size: cover;
         background-position: center;
     }
@@ -624,8 +629,11 @@ footer p:nth-child(2){
         font-size: 20px;
     }
     /*3ER CONTENT*/
+    .service{
+
+    }
     .title h2{
-        font-size: 45px;
+        font-size: 36px;
         width: 100%;
     }
     .box{
@@ -653,7 +661,7 @@ footer p:nth-child(2){
     }    
 }
 
-@media screen and (max-width:400PX){
+@media screen and (max-width:465PX){
     .hero{
         height: 100vh;
         width: 107%;
